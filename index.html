@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Car Finder </title>
+</head>
+<body>
+
+    <div class="container box">
+        
+        <div class="row">
+            <div class="col-12">
+                <header class="header">
+                    <h1 class="text-center">Find your car</h1>
+                </header>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-3">
+                <form id="form">
+                    <div class="form-group">
+                        <label class="d-block font-weight-bold" for="brand">Brand</label>
+                        <select class="u-full-width" id="brand">
+                            <option value="">Choose</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Mercedes Benz">Mercedes Benz</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Dodge">Dodge</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block font-weight-bold" for="year">Year</label>
+                        <select class="u-full-width" id="year">
+                            <option value="">Choose</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block font-weight-bold" for="min">Min Price</label>
+                        <select class="u-full-width" id="min">
+                                <option value="">Choose</option>
+                                <option value="20000">20,000</option>
+                                <option value="30000">30,000</option>
+                                <option value="40000">40,000</option>
+                                <option value="50000">50,000</option>
+                                <option value="60000">60,000</option>
+                                <option value="70000">70,000</option>
+                                <option value="80000">80,000</option>
+                                <option value="90000">90,000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block font-weight-bold" for="max">Max Price</label>
+                        <select class="u-full-width" id="max">
+                                <option value="">Choose</option>
+                                <option value="20000">20,000</option>
+                                <option value="30000">30,000</option>
+                                <option value="40000">40,000</option>
+                                <option value="50000">50,000</option>
+                                <option value="60000">60,000</option>
+                                <option value="70000">70,000</option>
+                                <option value="80000">80,000</option>
+                                <option value="90000">90,000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block font-weight-bold" for="doors">Doors</label>
+                        <select class="u-full-width" id=doors>
+                                <option value="">Choose</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block font-weight-bold" for="transmision">Transmisión</label>
+                        <select class="u-full-width" id="transmission">
+                                <option value="">Choose</option>
+                                <option value="automatic">Automatic</option>
+                                <option value="manual">Manual</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block font-weight-bold" for="color">Color</label>
+                        <select class="u-full-width" id="color">
+                                <option value="">Choose</option>
+                                <option value="black">Black</option>
+                                <option value="blue">Blue</option>
+                                <option value="white">White</option>
+                                <option value="red">Red</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button id='reset' class="btn btn-primary"> Another search </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-9 ">
+                <h3 class="text-center font-weight-bold any-result" ></h3>
+                <div id="results" class="cards "></div>
+            </>
+        </div>
+    </div>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
